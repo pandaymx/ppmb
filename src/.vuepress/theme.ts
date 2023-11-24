@@ -16,7 +16,7 @@ export default hopeTheme({
   iconAssets: ["fontawesome-with-brands","//at.alicdn.com/t/c/font_4282820_v4n0dfp6w8s.css"],
 
   logo: "/logo.jpg",
-
+  favicon: "/logo.jpg",
   repo: "pandaymx/ppmb",
 
   docsDir: "src",
