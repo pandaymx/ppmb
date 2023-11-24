@@ -1,8 +1,8 @@
 ---
 home: true
 layout: BlogHome
-icon: home
-title: 博客主页
+icon: ppmb icon-home
+title: 主页
 heroFullScreen: true
 # projects:
 #   - icon: project

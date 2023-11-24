@@ -1,6 +1,7 @@
 ---
 title: 个人介绍
-icon: circle-info
+icon: ppmb icon-ziwojieshao
+order: -1
 ---
 
 ## 基本信息
@@ -14,3 +15,7 @@ icon: circle-info
 ## 联系方式
 
 qq：1943575780
+
+## 个人介绍
+
+不是很喜欢吹牛逼，更喜欢当面吹牛逼，所以就不在这里说了。

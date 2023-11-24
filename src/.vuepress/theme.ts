@@ -13,7 +13,7 @@ export default hopeTheme({
     url: "https://mister-hope.com",
   },
 
-  iconAssets: "fontawesome-with-brands",
+  iconAssets: ["fontawesome-with-brands","//at.alicdn.com/t/c/font_4282820_45y2zd6mveu.css"],
 
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
@@ -106,9 +106,7 @@ export default hopeTheme({
       // component: true,
 
       demo: true,
-
-      // install echarts before enabling it
-      // echarts: true,
+      echarts: true,
 
       figure: true,
 
