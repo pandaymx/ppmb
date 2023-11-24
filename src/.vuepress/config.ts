@@ -9,7 +9,15 @@ export default defineUserConfig({
   lang: "zh-CN",
   title: "博客演示",
   description: "vuepress-theme-hope 的博客演示",
-
+  head:[
+    [
+      "script",
+      {
+        async: true,
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6269542893674001"
+      }
+    ]
+  ],
   theme,
   plugins: [
     shikiPlugin({
