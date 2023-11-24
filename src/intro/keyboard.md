@@ -1,6 +1,6 @@
 ---
 title: 键盘的使用
-order: 2
+order: 3
 icon: ppmb icon-jianpan
 category:
   - 入门
@@ -12,7 +12,7 @@ isOriginal: true
 
 常见的键盘有101、104键和87键这几种，87键是削减了小键盘区来进行缩减的。
 
-![键盘区域图](/assets/intro/键盘区域图.jpg)
+![键盘区域图](键盘区域图.jpg)
 
 ## 键盘区域
 
@@ -20,13 +20,13 @@ isOriginal: true
 
 主键盘区中的键又分为三大类，即字母键、数字（符号）键和功能键。
 
-![主键盘区域图](/assets/intro/主键盘区域图.jpg)
+![主键盘区域图](主键盘区域图.jpg)
 
 1. 字母键：A~Z共26个字母键。在字母键的键面上标有大写英文字母A~Z，每个键可打大小写两种字母。
 2. 数字（符号）键：共有21个键，包括数字、运算符号、标点符号和其他符号，分布如图3所示。每个建面上都有上下两种符号，也称双字符键，可以显示符号和数字。上面的一行称为上挡符号，下面的一行称为下挡符号。
-   ![数字键图](/assets/intro/数字键图.jpg)
+   ![数字键图](数字键图.jpg)
 3. 功能键：功能键共有14个，分布如图4所示.在这14个键中，AIt、Shit、Ctrl、windows键各有两个，对称分布在左右两边，功能完全一样，只是为了操作方便。
-   ![功能键图](/assets/intro/功能键图.jpg)
+   ![功能键图](功能键图.jpg)
    1. CapsLock(大写字母锁定键，也叫大小写换挡键）∶位于主键盘区最左边的第三排。每按一次大写字母锁定键，英文大小写字母的状态就改变一次。
    2. Shift（上档键，也叫换挡键）：位于主键盘区的第四排，左右各有一个，用于键入双字符键中的上挡符号，也可以在英文状态下进行大小写的切换。
    3. Ctrl（控制健）：一共有两个，位于主键盘区的左下角和右下角。该键不能单独使用，需要和其他键组合使用，能完成些特定的控制功能。
@@ -64,6 +64,96 @@ isOriginal: true
 
 ## 快捷键的使用
 
-敬请期待。
+###  F 功能键
 
+
+```tex
+F1显示程序或系统帮助内容
+F2重新命名所选项目
+F3搜索文件或文件夹
+F5刷新当前窗口
+F6循环切换屏幕元素
+F10激活当前程序中的菜单条
+```
+### ctrl 控制键
+
+```tex
+Ctrl+S保存
+Ctrl+W关闭程序
+Ctrl+N新建
+Ctrl+O打开
+Ctrl+Z撤销
+Ctrl+F查找
+Ctrl+X剪切
+Ctrl+C复制
+Ctrl+V粘贴
+Ctrl+A全选
+Ctrl+[缩小文字
+Ctrl+[缩小文字
+Ctrl+]放大文字
+Ctrl+B粗体
+Ctrl+I斜体
+Ctrl+U下划线
+Ctrl+Shift输入法切换
+Ctrl+空格中英文切换
+Ctrl+回车QQ号中发送信息
+Ctrl+Home光标快速移到文件头
+Ctrl+End光标快速移到文件尾
+Ctrl+Esc显示开始菜单
+Ctrl+Shift+快速放大文字
+Ctrl+F5在IE中强行刷新
+Ctrl+拖动文件启动\关闭输入法
+Ctrl+Shift+拖动文件创建快捷方式
+```
+
+### alt 
+
+```tex
+Alt+F4关闭当前程序
+Alt+空格+C关闭窗口
+Alt+空格+N最小化当前窗口
+Alt+空格+R恢复最小化窗口
+Alt+空格+X最大化当前窗口
+Alt+空格+M移动窗口
+Alt+空格+S改变窗口大小
+Alt+Tab两个程序交换
+Alt+F打开文件菜单
+Alt+V打开视图菜单
+Alt+E打开编辑菜单
+Alt+I打开插入菜单
+Alt+O打开格式菜单
+Alt+T打开工具菜单
+Alt+A打开表格菜单
+Alt+W打开窗口菜单
+Alt+H打开帮助菜单
+Alt+回车查看文件属性
+Alt+双击文件查看文件属性
+Shift+空格半\全角切换
+Shift+右击右菜单打开方式
+Shift+F10选中文件的右菜单
+Shift+多级文件全部关闭
+Shift+Del直接删除文件
+```
+
+### Windows 资源管理器
+
+```tex
+END显示当前窗口的底端
+Home显示当前窗口的顶端
+NUMLOCK+数字键盘的星号(*)显示所选文件夹的所有子文件夹
+NUMLOCK+数字键盘的加号(+)显示所选文件夹的内容
+NUMLOCK+数字键盘的减号(-)折叠所选的文件夹
+单独按Windows：显示或隐藏“开始”功能表
+Windows+BREAK显示“系统属性”对话框
+Windows+D显示桌面
+Windows+M最小化所有窗口
+Windows+Shift+M还原最小化的窗口
+Windows+E开启“资源管理器”
+Windows+F查找文件或文件夹
+Windows+CTRL+F查找电脑
+Windows+F1显示Windows“帮助”
+Windows+R运行
+Windows+U开启“公用程序管理器”
+Windows+L切换使用者
+```
 <Share colorful />
