@@ -1,8 +1,10 @@
 import { defineUserConfig } from "vuepress";
 import { shikiPlugin } from "@vuepress/plugin-shiki";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
+import { getDirname, path } from "@vuepress/utils";
 import theme from "./theme.js";
 
+const __dirname = getDirname(import.meta.url);
 export default defineUserConfig({
   base: "/",
 
@@ -40,6 +42,13 @@ export default defineUserConfig({
       ],
     }),
   ],
+
+  alias: {
+    "@theme-hope/modules/blog/components/BlogHero": path.resolve(
+      __dirname,
+      "./components/BlogHero.vue",
+    ),
+  },
   // Enable it with pwa
   // shouldPrefetch: false,
 });

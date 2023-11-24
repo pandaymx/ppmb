@@ -11,6 +11,9 @@ devDependencies:
   '@vuepress/plugin-shiki':
     specifier: 2.0.0-rc.0
     version: 2.0.0-rc.0
+  '@vuepress/utils':
+    specifier: 2.0.0-rc.0
+    version: 2.0.0-rc.0
   vue:
     specifier: ^3.3.8
     version: 3.3.8
