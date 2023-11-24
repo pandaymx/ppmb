@@ -75,7 +75,7 @@ export default hopeTheme({
       "/demo/encrypt.html": ["1234"],
     },
   },
-
+  fullscreen: true,
   // page meta
   metaLocales: {
     editLink: "在 GitHub 上编辑此页",
