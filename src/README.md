@@ -4,6 +4,7 @@ layout: BlogHome
 icon: ppmb icon-home
 title: 主页
 heroFullScreen: true
+order: 1
 # projects:
 #   - icon: project
 #     name: 项目名称
