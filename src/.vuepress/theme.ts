@@ -13,7 +13,7 @@ export default hopeTheme({
     url: "https://mister-hope.com",
   },
 
-  iconAssets: ["fontawesome-with-brands","//at.alicdn.com/t/c/font_4282820_zet58l2ibr.css"],
+  iconAssets: ["fontawesome-with-brands","//at.alicdn.com/t/c/font_4282820_836jkmy45ng.css"],
 
   logo: "/logo.jpg",
   favicon: "/logo.jpg",
@@ -119,7 +119,7 @@ export default hopeTheme({
       include: true,
 
       // install katex before enabling it
-      // katex: true,
+      katex: true,
 
       // install mathjax-full before enabling it
       // mathjax: true,

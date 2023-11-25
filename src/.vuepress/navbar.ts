@@ -11,5 +11,6 @@ export default navbar([
     children: [
       'datastr/'
     ]
-  }
+  },
+  "/math/"
 ]);
