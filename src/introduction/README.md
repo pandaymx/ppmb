@@ -8,6 +8,8 @@ category:
   - 入门
 tag:
   - 目录
+prev: ../guide
+next: computer
 ---
 
 <AutoCatalog/>
