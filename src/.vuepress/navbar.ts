@@ -3,7 +3,7 @@ import { navbar } from "vuepress-theme-hope";
 export default navbar([
   "/",
   "/guide",
-  "/intro/",
+  "/introduction/",
   {
     text: '基础',
     icon: "ppmb icon-circle-info",

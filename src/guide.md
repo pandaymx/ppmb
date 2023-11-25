@@ -7,6 +7,7 @@ tag:
   - 简介
   - 全文目录 
 order: 2
+next: ../introduction/
 ---
 
 <AutoCatalog base="/"/>
