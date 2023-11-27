@@ -12,5 +12,6 @@ export default navbar([
       'datastr/'
     ]
   },
+  "/ai/",
   "/math/"
 ]);
