@@ -1,7 +1,7 @@
 ---
 title: 入门
 order: 1
-icon: ppmb icon-xinshourumen1
+icon: ppmb icon-jichuguanli
 category:
   - 数学
 tag:

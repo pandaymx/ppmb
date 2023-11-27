@@ -30,7 +30,7 @@ export default hopeTheme({
   footer: "默认页脚",
 
   displayFooter: true,
-
+  hotReload: true,
   blog: {
     description: "一个很皮的人",
     intro: "/intro.html",
