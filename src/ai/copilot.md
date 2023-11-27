@@ -5,7 +5,7 @@ category:
   - AI
 tag:
   - 基本使用
-order: 2
+order: 3
 isOriginal: true
 ---
 

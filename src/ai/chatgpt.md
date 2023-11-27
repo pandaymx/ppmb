@@ -1,5 +1,5 @@
 ---
-title: 简述
+title: chatGPT
 icon: ppmb  icon-SVG
 category:
   - AI
@@ -8,6 +8,14 @@ tag:
 order: 2
 isOriginal: true
 ---
+
+## chatGPT 的注册
+
+最新的注册不再需要验证手机号码，只需要一个邮箱就可以了，建议使用谷歌邮箱或者 outlook 邮箱，国内的邮箱会直接被黑。
+
+## 部署 chatGPT
+
+
 
 
 
