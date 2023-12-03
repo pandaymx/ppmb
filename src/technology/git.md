@@ -1,6 +1,6 @@
 ---
-title: 简介
-icon: ppmb icon-xiangmujianjie
+title: Git
+icon: ppmb icon-git
 category:
   - 实用技术
 tag:
