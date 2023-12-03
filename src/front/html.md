@@ -56,7 +56,4 @@ html 中的注释和 xml 中注释类似 `<!-- 注释内容 -->`
 3. 内容：Hello World，部分标签可以没有内容
 4. 属性：不是所有的元素都有属性，例如 `<div class="hello_world">`，可以包含多个属性
 
-
-
-
-<AutoCatalog/>
+<Share colorful />

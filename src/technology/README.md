@@ -7,7 +7,7 @@ category:
 tag:
   - 目录
 dir:
-  order: 8
+  order: 9
 ---
 
 <AutoCatalog/>
