@@ -24,25 +24,22 @@ export default hopeTheme({
   // sidebar
   sidebar,
 
-  footer: "默认页脚",
+  footer: "皮皮萌宝李时珍的皮",
 
   displayFooter: true,
-  hotReload: true,
   blog: {
     description: "一个很皮的人",
     intro: "/intro.html",
     medias: {
-      Baidu: "https://example.com",
       BiliBili: "https://example.com",
       Bitbucket: "https://example.com",
       Dingding: "https://example.com",
       Discord: "https://example.com",
       Dribbble: "https://example.com",
-      Email: "mailto:info@example.com",
+      Email: "mailto:panda1943575780@outlook.com",
       Evernote: "https://example.com",
       Facebook: "https://example.com",
       Flipboard: "https://example.com",
-      Gitee: "https://example.com",
       GitHub: "https://example.com",
       Gitlab: "https://example.com",
       Gmail: "mailto:panda1943575780@gmail.com",
@@ -53,7 +50,6 @@ export default hopeTheme({
       Pinterest: "https://example.com",
       Pocket: "https://example.com",
       QQ: "https://example.com",
-      Qzone: "https://example.com",
       Reddit: "https://example.com",
       Rss: "https://example.com",
       Steam: "https://example.com",
@@ -62,7 +58,6 @@ export default hopeTheme({
       Weibo: "https://example.com",
       Whatsapp: "https://example.com",
       Youtube: "https://example.com",
-      Zhihu: "https://example.com",
     },
   },
 
