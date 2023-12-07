@@ -250,11 +250,11 @@ Markdown 使用三个连字符创建每列的标题，并使用\|来分隔每列
 
 可以通过三个\`来创建代码块。其后可以添加一种语言，也可以不添加
 
-```md
-```python
-print('hello world')
-```
-```
+
+\```python<br>
+print('hello world')<br>
+\```<br>
+
 
 效果如下所示：
 
@@ -331,6 +331,16 @@ $$\frac{a}{b}$$
 
 具体可以搜索其他的内容。
 
+\```mermaid<br>
+graph LR<br>
+A[方形] -->B(圆角)<br>
+    B --> C{条件a}<br>
+    C -->|a=1| D[结果1]<br>
+    C -->|a=2| E[结果2]<br>
+    F[横向流程图]<br>
+\```
+
+演示效果：
 ```mermaid
 graph LR
 A[方形] -->B(圆角)
