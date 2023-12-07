@@ -89,7 +89,7 @@ export default hopeTheme({
       tasklist: true,
       // install chart.js before enabling it
       // chart: true,
-
+      mermaid: true,
       codetabs: true,
 
       // insert component easily

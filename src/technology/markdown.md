@@ -250,9 +250,12 @@ Markdown 使用三个连字符创建每列的标题，并使用\|来分隔每列
 
 可以通过三个\`来创建代码块。其后可以添加一种语言，也可以不添加
 
-\```python
-\ print('hello world')
-\```
+```md
+```python
+print('hello world')
+```
+```
+
 效果如下所示：
 
 ```python
@@ -272,14 +275,6 @@ print('hello world')
 : he
 : she
 ```
-
-第一列
-: 我
-
-第三人称
-: it
-: he
-: she
 
 ### 删除线
 
