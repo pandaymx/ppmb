@@ -12,16 +12,26 @@ isOriginal: true
 
 ## 简介
 
-Markdown是一种轻量级的标记语言，可用于在纯文本文档中添加格式化元素。
+Markdown 是一种轻量级的标记语言，将普通文本转换成 HTML 文档，因此 markdown 文档可以直接使用 HTML 语句。
+
+### 常用工具
 
 建议使用 VS Code 或者 Typora 来进行使用。
+
+VS Code 中推荐使用插件 [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced) 、[Markdown Preview Github Styling](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles) 和 [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)。
+
+### 使用场景
+
+很多个人博客都是通过 markdown 来进行编写的。
+
+GitHub 中的 README 文件基本上都是使用 markdown 进行编写的。
 
 ## 基本语法
 ### 标题
 
-标题可以通过添加添加#号来添加。一级标题为1个#号，六级标题为6个#号。建议一级标题只使用一个。
+标题可以通过添加添加#号来添加。一级标题为1个 #，六级标题为6个 #。建议一级标题只使用一个。
 
-建议在#号和后续的文本之间使用空格来进行分隔。
+建议在 # 和后续的文本之间使用空格来进行分隔。
 
 ```md
 # 一级标题
@@ -33,6 +43,7 @@ Markdown是一种轻量级的标记语言，可用于在纯文本文档中添加
 ```
 
 演示效果：
+
 > # 一级标题
 > ## 二级标题
 > ### 三级标题
