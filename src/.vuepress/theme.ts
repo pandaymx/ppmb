@@ -48,7 +48,7 @@ export default hopeTheme({
       Weibo: "https://example.com",
     },
   },
-  pageInfo: ["Author","Category","Date","Original","PageView","ReadingTime","Tag","Word"],
+  pageInfo: ["Original","Author","Date","Category","Tag","ReadingTime","Word","PageView",],
   fullscreen: true,
   // page meta
   metaLocales: {
