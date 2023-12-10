@@ -15,8 +15,6 @@ isOriginal: true
 
 ## 部署 chatGPT
 
-
-
-
+网站部署可以直接使用 docker 或者其他部署方式，但是需要消耗额度。
 
 <Share colorful />

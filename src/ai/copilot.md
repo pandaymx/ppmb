@@ -11,7 +11,7 @@ isOriginal: true
 
 ## 简介
 
-![copilot](./copilot.png)
+![copilot](assets/copilot.png)
 
 Copilot 是微软的人工智能，已经用上了阉割版的 GPT 4，有多个不同的版本。
 1. Github Copilot：AI 工具，一般用于代码生成。
@@ -19,7 +19,7 @@ Copilot 是微软的人工智能，已经用上了阉割版的 GPT 4，有多个
 
 ## Github Copilot
 
-![Github Copilot试用](./github%20copilot.png)
+![Github Copilot试用](assets/github%20copilot.png)
 
 一般来说有两个月的试用，建议偶尔向一些开源项目提一下 pr 。
 
@@ -31,7 +31,7 @@ Copilot 是微软的人工智能，已经用上了阉割版的 GPT 4，有多个
 
 ### 设置区域
 
-![选择区域](./选择区域.png)
+![选择区域](assets/选择区域.png)
 
 需要将区域改为美国。
 
@@ -60,5 +60,5 @@ vivetool /enable /id:44774629,44776738,44850061,42105254,41655236
 
 如果长时间出现登录无效，浏览器地址栏输入 `edge://settings/privacy`。
 
-![清楚浏览记录](清除浏览记录.png)
+![清楚浏览记录](assets/清除浏览记录.png)
 
