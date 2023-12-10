@@ -1,6 +1,6 @@
 ---
 title: AI
-icon: ppmb 
+icon: ppmb icon-rengongzhineng
 index: false
 dir:
   order: 9

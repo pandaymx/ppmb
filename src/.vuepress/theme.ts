@@ -10,7 +10,7 @@ export default hopeTheme({
     url: "https://pandaymx.github.com",
   },
 
-  iconAssets: ["fontawesome-with-brands","//at.alicdn.com/t/c/font_4282820_k9rfdmerpfb.css"],
+  iconAssets: ["fontawesome-with-brands","//at.alicdn.com/t/c/font_4282820_8y2r71ka7mn.css"],
 
   logo: "/logo.jpg",
   favicon: "/logo.jpg",
@@ -48,7 +48,7 @@ export default hopeTheme({
       Weibo: "https://example.com",
     },
   },
-
+  pageInfo: ["Author","Category","Date","Original","PageView","ReadingTime","Tag","Word"],
   fullscreen: true,
   // page meta
   metaLocales: {
@@ -58,13 +58,10 @@ export default hopeTheme({
   plugins: {
     blog: true,
     prismjs: false,
-    // install @waline/client before enabling it
-    // WARNING: This is a test server for demo only.
-    // You should create and use your own comment service in production.
-    // comment: {
-    //   provider: "Waline",
-    //   serverURL: "https://waline-comment.vuejs.press",
-    // },
+    comment: {
+      provider: "Waline",
+      serverURL: "https://comment.ppmb.xyz",
+    },
     components:{
       components:[
         "XiGua"

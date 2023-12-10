@@ -1,6 +1,6 @@
 ---
 title: 简述
-icon: ppmb 
+icon: ppmb icon-jichuguanli
 category:
   - AI
 tag:
