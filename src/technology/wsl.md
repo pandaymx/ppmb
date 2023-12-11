@@ -18,10 +18,6 @@ WSL 与虚拟机相比，性能更高，没有更大的花销。
 
 WSL 2 是新版本也是默认版本，相比较于 WSL 1， WSL 2 更快，但是跨文件系统性能不如前者。WSL 2在Windows 11 或Windows 10 版本1903、内部版本 18362 或更高版本中可用。
 
-::: tip
-只要是最新的操作系统建议无脑选WSL 2。
-:::
-
 ## 安装
 
 ### 新版本
@@ -35,7 +31,9 @@ wsl --install
 该命令安装默认的 Linux 发行版 Ubuntu。
 
 ::: tip
-该命令需要科学上网环境，也可以通过修改 hosts 文件绕过。如果安装其他版本，请跳到[安装](#基本命令)。
+
+该命令需要科学上网环境，也可以通过修改 hosts 文件绕过。
+
 :::
 
 ### 旧版本
@@ -52,11 +50,11 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 也可通过下方搜索栏中搜索启用或关闭Windows功能。
 
-![启用或关闭Windows功能](启用或关闭Windows功能.png)
+![启用或关闭Windows功能](assets/启用或关闭Windows功能.png)
 
 打开后选择适用于Windows的Linux子系统功能和虚拟机平台功能。
 
-![启用功能](启用功能.png)
+![启用功能](assets/启用功能.png)
 
 等待安装之后重启即可。
 
@@ -74,7 +72,7 @@ wsl --set-default-version 2
 
 #### 安装Linux发行版
 
-![选择合适发行版](微软商店选择发行版.png)
+![选择合适发行版](assets/微软商店选择发行版.png)
 
 首次启动新安装的 Linux 分发版时，将打开一个控制台窗口。之后启动时间会变快。
 
@@ -82,7 +80,7 @@ wsl --set-default-version 2
 
 ### 设置用户名密码
 
-![设置用户名和密码](设置用户名和密码.png)
+![设置用户名和密码](assets/设置用户名和密码.png)
 
 之后每次进入会使用这个默认的用户。
 
@@ -95,10 +93,10 @@ wsl --install
 ```
 
 ```shell
-wsl --install <Distribution Name>
+wsl --install Debian
 ```
 
-该命令用于安装其他的 Linux 发行版。如果是旧版安装方式，需要使用 `wsl --install -d <Distribution Name>`
+该命令用于安装其他的 Linux 发行版。如果是旧版安装方式，需要使用 `wsl --install -d Debian`，也可以运行升级命令从而使用 `wsl --install Debian`。
 
 ### 列出可用的 Linux 发行版
 
@@ -171,9 +169,6 @@ sudo apt-get install wget ca-certificates
 
 从 VS Code 中打开 wsl 需要使用 `ctrl+shift+p` 调出命令窗口，输入 wsl 即可使用其他命令。在 VS Code 中部分扩展可能需要单独安装在 wsl 发行版上。
 
-::: tip 小建议
-如果需要使用 VS Code 进行开发，建议放在用户目录下，会快一点。
-:::
 
 ### node
 
@@ -225,7 +220,7 @@ git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git
 
 1. 安装 [Docker Desktop](https://www.docker.com/products/docker-desktop/) 。
 2. settings > Resources > WSL integration 选中需要的 Linux 发行版。（你要确保你已经打开了 WSL 引擎，一般安装前就会显示）。
-    ![Docker设置](docker设置Linux发行版.png)
+    ![Docker设置](assets/docker设置Linux发行版.png)
 
 即可在 wsl中使用 docker。
 
@@ -281,7 +276,6 @@ mkdir E:\wslDistroStorage\CentOS
 wsl --import CentOS E:\wslDistroStorage\CentOS .\centos.tar
 wsl -d CentOS
 ```
-
 
 
 

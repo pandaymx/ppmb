@@ -21,10 +21,10 @@ Linux是一种类UNIX操作系统，英文解释为Linux is not Unix。
 ### Linux发行版
 
 Linux发行版是将Linux内核和应用软件的打包。
-![Linux发行版组合](../Linux发行版.jpg)
+![Linux发行版组合](assets/Linux发行版.jpg)
 常见的发行版有：
 
-![Linux发行版](../常见发行版.jpg)
+![Linux发行版](assets/常见发行版.jpg)
 
 ### 应用程序
 
@@ -39,7 +39,7 @@ Linux发行版是将Linux内核和应用软件的打包。
 
 ### WSL安装
 
-可以参考[wsl]()。Windows中使用Linux命令，可以采用wsl方式，也可以采用git bash的方式。
+可以参考[wsl](../wsl.md)。Windows中使用Linux命令，可以采用wsl方式，也可以采用git bash的方式。
 
 
 

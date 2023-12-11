@@ -16,7 +16,7 @@ isOriginal: true
 
 Linux的目录结构是一个树型结构，Windows也是树型，但是有多个树，例如C盘，D盘等，Linux全部在以\/开头的根目录下。
 
-![Linux目录结构](../Linux目录结构.jpg)
+![Linux目录结构](assets/Linux目录结构.jpg)
 
 - bin：bin存放着最经常使用的命令。
 
