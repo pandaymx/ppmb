@@ -132,7 +132,6 @@ export default hopeTheme({
       sup: true,
       tabs: true,
       vPre: true,
-
       // install @vue/repl before enabling it
       // vuePlayground: true,
     },
