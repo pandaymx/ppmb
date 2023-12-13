@@ -10,7 +10,7 @@ export default hopeTheme({
     url: "https://pandaymx.github.com",
   },
 
-  iconAssets: ["fontawesome-with-brands","//at.alicdn.com/t/c/font_4282820_8y2r71ka7mn.css"],
+  iconAssets: ["fontawesome-with-brands","//at.alicdn.com/t/c/font_4343225_uznphu4z76.css"],
 
   logo: "/logo.jpg",
   favicon: "/logo.jpg",
