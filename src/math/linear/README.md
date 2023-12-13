@@ -3,7 +3,7 @@ title: 线性代数
 icon: ppmb icon-shuxue
 index: false
 dir:
-  order: 1
+  order: 2
 category:
   - 数学
 tag:
