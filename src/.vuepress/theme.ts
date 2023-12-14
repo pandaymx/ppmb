@@ -7,7 +7,8 @@ export default hopeTheme({
 
   author: {
     name: "皮皮萌宝",
-    url: "https://pandaymx.github.com",
+    url: "https://pandaymx.github.io",
+    email: 'pandaymx1943575780@outlook.com'
   },
 
   iconAssets: ["fontawesome-with-brands","//at.alicdn.com/t/c/font_4282820_nt35g68oxoo.css"],
