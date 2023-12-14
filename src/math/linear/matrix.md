@@ -212,19 +212,7 @@ $$
 
 n $\times$ 1 或者 1 $\times$ n 的矩阵称为向量，前者为列向量，后者为行向量.
 
-$$
-\begin{align}
-x + 2y  &= 5 \\
-2x + 3y &= 8
-\end{align}
-$$
-
-该线性方程组的结果可以表示为行向量 $(1,2)$或者列向量$ 
-\begin{bmatrix}1\\
-2
-\end{bmatrix}$.一般会使用列向量来继续进行表示.
-
-
+该线性方程组的结果可以表示为行向量 $(1,2)$或者列向量 $\begin{bmatrix}1\\2 \end{bmatrix}$.一般会使用列向量来继续进行表示.
 
 如果使用向量来对上面的方程组进行表示
 
@@ -326,8 +314,8 @@ $$IA =AI = A$$
 
 $$
 \delta _{ij}=\left\{\begin{matrix} 
-  1 \hspace{1cm} 当i=j\\  
-  0 \hspace{1cm} 当i\ne j
+  1 \hspace{1cm} \text{当}i=j\text{时}\\  
+  0 \hspace{1cm} \text{当}i\ne j\text{时}
 \end{matrix}\right. 
 $$
 
