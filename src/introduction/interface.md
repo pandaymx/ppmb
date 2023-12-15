@@ -12,7 +12,7 @@ isOriginal: true
 
 ## USB 接口
 
-![USB接口](USB接口.png)
+![USB接口](assets/USB接口.png)
 
 ### type
 
