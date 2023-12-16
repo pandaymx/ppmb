@@ -1,5 +1,5 @@
 ---
-title: Spring Cloud
+title: Spring Cloud Alibaba
 icon: ppmb icon-cloud
 index: false
 category:
