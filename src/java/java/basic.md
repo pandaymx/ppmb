@@ -63,23 +63,13 @@ public class HelloWorld {
 | 字符串型字面量 |    `"Hello"`, `"世界"`    |      表示一系列字符的字面量，使用双引号括起来。       |
 |  空字面量   |         `null`          |     表示空值的字面量，可以用于任何引用类型的变量。      |
 
-::: tip 其他进制整数
-默认使用的是10进制，2进制0B开头，八进制0开头，十六进制0X开头。
-:::
-
 ```java
-public class Main {
-    public static void main(String[] args) {
-        System.out.println(123);
-        System.out.println(123.56);
-        System.out.println("hello world");
-        System.out.println('中');
-        System.out.println(true);
-        System.out.println(false);
-        // null不能直接输出
-        // System.out.println(null);
-    }
-}
+System.out.println(123);
+System.out.println(123.56);
+System.out.println("hello world");
+System.out.println('中');
+System.out.println(true);
+System.out.println(false);
 ```
 
 ## 变量
@@ -93,14 +83,10 @@ public class Main {
 两者可以结合`数据类型 变量名 = 值`，Java中的变量只能定义一次，但是可以多次使用。
 
 ```java
-public class Main {
-    public static void main(String[] args) {
-        int a = 10;
-        System.out.println(a);
-        a++;
-        System.out.println(a);
-    }
-}
+int a = 10;
+System.out.println(a);
+a++;
+System.out.println(a);
 ```
 
 ## 数据类型
@@ -159,9 +145,28 @@ public class Main {
 其中的long类型需要使用L进行标识、float需要使用f和F进行标识。使用L是担心l会和1混淆。
 :::
 
+```java
+byte a = 1;
+short b = 1;
+int c= 111;
+long d= 123L;
+float e = 1.0F;
+double f= 1.0;
+boolean g = true;
+char h = '中';
+System.out.println(a);
+System.out.println(b);
+System.out.println(c);
+System.out.println(d);
+System.out.println(e);
+System.out.println(f);
+System.out.println(g);
+System.out.println(h);
+```
+
 ### 引用数据类型
 
-引用数据类型有类，接口和数组。
+引用数据类型有[类](object.md/#基本概念)，接口和数组。
 
 ## 标识符
 
@@ -215,6 +220,16 @@ true和false也不能用做标识符。中文也可以用作关键字。
 
 如果需要得到浮点数运算结果，则需要浮点数参与计算。
 
+```java
+int a = 10;
+int b = 5;
+System.out.println(a + " + " + b + " = " + (a + b));
+System.out.println(a + " - " + b + " = " + (a - b));
+System.out.println(a + " * " + b + " = " + (a * b));
+System.out.println(a + " / " + b + " = " + (a / b));
+System.out.println(a + " % " + b + " = " + (a % b));
+```
+
 ### 自增自减运算符
 
 | 符号 | 作用    |
@@ -222,34 +237,223 @@ true和false也不能用做标识符。中文也可以用作关键字。
 | ++ | 变量值+1 |
 | -- | 变量值-1 |
 
-运算符用于变量值，原则上i++和++i运算结果相同，但是
+```java
+int a = 10;
+a++;
+System.out.println(a);
+a--;
+System.out.println(a);
+```
 
 ### 关系运算符
 
+| 符号 | 作用 |
+|----|----|
+| == | 等于 |
+|!= | 不等于 |
+| >  | 大于 |
+| <  | 小于 |
+| >= | 大于等于 |
+| <= | 小于等于 |
+
+和基本的数学比较一样，结果类似，返回 true 或 false。
+
+```java
+int a = 10;
+int b = 5;
+System.out.println(a >= b);
+System.out.println(a > b);
+System.out.println(a <= b);
+System.out.println(a < b);
+System.out.println(a != b);
+System.out.println(a == b);
+```
  
-### 逻辑运算符
 
 ### 赋值运算符
 
+|符号|作用|
+|----|----|
+|=|赋值|
+|+=|加法赋值|
+|-=|减法赋值|
+|*=|乘法赋值|
+|/=|除法赋值|
+|%=|取模赋值|
+
+用于将某个值赋给一个变量，其中 `a += b` 就近似于 `a = a + b`。
+
+```java
+int a = 10;
+int b = 20;
+System.out.println(a+=b);
+System.out.println(a-=b);
+System.out.println(a*=b);
+System.out.println(a/=b);
+System.out.println(a%=b);
+```
+
+### 逻辑运算符
+|符号|作用|
+|----|----|
+|&&|与|
+|\|\||或|
+|!|非|
+
+&& 表示两个都为真才为真否则为假，|| 两个都为假才为假，否则为真。! 符号用于取反操作，对 true 取反返回 false，对 false 取反返回 true。
+
+```java
+System.out.println(true && true);
+System.out.println(true && false);
+System.out.println(false && false);
+System.out.println(false && true);
+System.out.println(true ||true);
+System.out.println(true || false);
+System.out.println(false || false);
+System.out.println(false || true);
+System.out.println(!true);
+System.out.println(!false);
+```
 ### 三元运算符
 
-### 位运算符
+三元运算符只有一个，`关系表达式?参数1:参数2` 第一个参数为一个关系运算符，如果为 true ，返回值为第一个元素，如果为 false ，返回第二个元素。
+
+```java
+int a = 10;
+int b = 5;
+System.out.println(a>b?a:b);
+```
+
+
+
+
 
 ## 选择结构
 
-### if
+选择结构用于进行判断，当条件满足时执行某段代码。
 
-### switch
+### if语句
 
+if 语句格式：
+
+```md
+if(关系表达式1){
+  语句体1;
+}else if(关系表达式2){
+  语句体2;
+}else{
+  语句体n+1;
+}
+```
+
+其中 `else if` 可以有多个，`else` 可以没有，`if` 必须有。执行流程为当关系表达 1 为 true，执行语句体 1，如果为 false，则向下执行，当遇见关系表达式 2~n 中符合条件的则执行相应的语句块，当所有条件不满足后执行 `else` 语句块。
+
+```java
+int a = 10;
+int b = 5;
+if(a>b){
+  System.out.println("a>b");
+}else if(a<b){
+  System.out.println("a<b");
+}else{
+  System.out.println("a=b");
+}
+```
+
+### switch 
+
+switch 语句格式：
+
+```md
+switch(表达式){
+  case 常量1:
+    语句体1;
+    break;
+  case 常量2:
+    语句体2;
+    break;
+ ...
+  default:
+    语句体n+1;
+}
+```
+
+其中 `case` 后面可以有多个，`default` 可以没有，`switch` 必须有。执行流程为当表达式的值与 `case` 后面的常量相等时执行相应的语句块，当所有条件不满足后执行 `default` 语句块。
+
+```java
+int a = 10;
+switch(a){
+  case 10:
+    System.out.println("a=10");
+    break;
+  case 5:
+    System.out.println("a=5");
+    break;
+  default:
+    System.out.println("a!=10&&a!=5");
+}  
+```
 ## 循环结构
+
+循环结构用于执行多次的重复性代码。
 
 ### for
 
+for 循环格式：
+
+```md
+for(初始化表达式; 关系表达式; 增量表达式){
+  语句体;
+}
+```
+
+执行流程为首次初始化表达式，当关系表达式为 true 时，执行语句体，之后执行增量表达式，当关系表达式为 false 时，结束循环。
+
+```java
+for(int i = 0; i<5;i++){
+  System.out.println("Hello World");
+}
+```
+
 ### while
+
+
+
+```java
+int i = 0;
+while (i<5){
+    System.out.println("Hello World");
+    i++;
+}
+```
 
 ### do-while
 
-### 控制跳转
+```java
+int i = 0;
+do{
+    System.out.println("Hello World");
+    i++;
+}while(i<5);
+```
+
+### 控制跳转语句
+
+控制跳转语句有两个，其中一个是跳过本次循环 `continue`，一个是跳出循环 `break`。
+
+```java
+for (int i = 0; i < 5; i++) {
+    if (i == 1) {
+        continue;
+    }
+    if (i==3){
+        break;
+    }
+    System.out.println(i);
+}
+```
+
+
 
 
 

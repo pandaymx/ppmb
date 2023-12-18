@@ -1,6 +1,6 @@
 ---
 title: 数据库
-icon: ppmb icon-yingyongguanli
+icon: ppmb icon-odbc-full
 index: false
 category:
   - 数据库
