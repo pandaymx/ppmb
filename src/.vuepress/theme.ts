@@ -53,7 +53,7 @@ export default hopeTheme({
   fullscreen: true,
   // page meta
   metaLocales: {
-    editLink: "在 GitHub 上编辑此页",
+    editLink: "编辑此页",
   },
 
   plugins: {
@@ -77,25 +77,18 @@ export default hopeTheme({
       // chart: true,
       mermaid: true,
       codetabs: true,
-
       // insert component easily
       // component: true,
-
       demo: true,
       echarts: true,
-
       figure: true,
-
       // install flowchart.ts before enabling it
       // flowchart: true,
-
       // gfm requires mathjax-full to provide tex support
       // gfm: true,
-
       imgLazyload: true,
       imgSize: true,
       include: true,
-
       // install katex before enabling it
       katex: true,
 
