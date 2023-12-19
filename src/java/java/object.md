@@ -103,7 +103,7 @@ public class Main {
 常用的是 `private` 进行修饰。
 
 ```java
-public class Student {
+class Student {
     private String name;
     private int age;
 
@@ -123,10 +123,75 @@ public class Student {
         this.age = age;
     }
 }
+public class Main {
+    public static void main(String[] args) {
+        Student student = new Student();
+        student.setAge(11);
+        student.setName("蔡徐坤");
+        System.out.println(student.getName());
+        System.out.println(student.getAge());
+    }
+}
 ```
+
+使用 `private` 修饰的变量，不能直接访问，对应的 `get` 和 `set` 方法对变量进行赋值和访问，这就是封装的实际使用。
+
+## 构造方法
+
+构造方法是一种特殊方法，是创建对象的初始化操作。构造方法必须和类型相同，没有返回值，可以有访问修饰符。
+
+```java
+class Student {
+    public Student(){
+
+    }
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    private String name;
+    private int age;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Student student = new Student();
+        Student student1 = new Student("皮皮萌宝", 111);
+    }
+}
+```
+
+main 方法中第一个创建的无参的构造方法，第二个是通过有参的构造方法创建的。
 
 ## Java Bean
 
-由于封装的特性，因此对于变量的访问不能这样进行，因此选
+Java Bean 是一种 Java 类，它遵循 JavaBean 规范，即 JavaBean 类中的属性和方法必须符合 JavaBean 规范，这样的类被称为 JavaBean。
+
+JavaBean 规范要求：
+
+- 所有的属性必须有 getter 和 setter 方法
+- 所有的属性必须有合适的类型
+- 所有的属性必须有合适的名字
+
+前两个使用的 Student 类就可以看做是一个 Java Bean。
+
+
+
+
 
 <Share colorful />

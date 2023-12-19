@@ -10,9 +10,13 @@ order: 7
 isOriginal: true
 ---
 
+## 单列集合
+
+单列集合 Collection 保存
+
 ## 双列集合
 
-双列集合 map 保存 key-value 键值对，key 值不可以重复，value 值可以重复。
+双列集合 Map 保存 key-value 键值对，key 值不可以重复，value 值可以重复。
 
 
 

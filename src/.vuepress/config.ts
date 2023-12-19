@@ -19,25 +19,6 @@ export default defineUserConfig({
         src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6269542893674001"
       }
     ],
-    ["link",
-      {
-        rel: "preconnect",
-        href: "https://fonts.googleapis.com"
-      }
-    ],
-    ["link",
-      {
-        rel: "preconnect",
-        href: "https://fonts.gstatic.com",
-        crossorigin: ''
-      }
-    ],
-    ["link",
-      {
-        href: "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;500;600;700;900&display=swap",
-        rel: "stylesheet"
-      }
-    ],
   ],
   theme,
   plugins: [
