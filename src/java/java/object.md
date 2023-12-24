@@ -191,7 +191,27 @@ JavaBean 规范要求：
 前两个使用的 Student 类就可以看做是一个 Java Bean。
 
 
+## static
 
+`static` 关键字是 Java 用来修饰成员变量和方法的关键字，`static` 修饰的成员变量和方法属于类，而非对象，`static` 修饰的方法可以直接通过类名来调用，而不需要通过对象来调用。
 
+```java
+public class Main {
+    public static void main(String[] args) {
+        test2();
+        new Main().test1();
+    }
+    public void test1() {
+        System.out.println("test方法被执行");
+    }
+    public static void test2() {
+        System.out.println("test方法被执行");
+    }
+}
+```
+
+## 继承
+
+继承是两类之间的关系，部分参数子类可以使用。
 
 <Share colorful />

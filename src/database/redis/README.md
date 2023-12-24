@@ -1,6 +1,6 @@
 ---
 title: Redis
-icon: ppmb icon-yingyongguanli
+icon: ppmb icon-redis
 index: false
 category:
   - 数据库
