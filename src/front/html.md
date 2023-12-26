@@ -1,7 +1,6 @@
 ---
 title: HTML
 icon: ppmb icon-html5
-index: false
 category:
   - HTML
 tag:

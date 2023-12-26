@@ -7,7 +7,7 @@ import theme from "./theme.js";
 const __dirname = getDirname(import.meta.url);
 export default defineUserConfig({
   base: "/",
-
+  port: 80,
   lang: "zh-CN",
   title: "皮皮萌宝的博客",
   description: "皮皮萌宝的博客",

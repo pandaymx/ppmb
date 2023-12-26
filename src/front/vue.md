@@ -1,7 +1,6 @@
 ---
 title: vue
 icon: ppmb icon-html5
-index: false
 category:
   - 前端
 tag:
