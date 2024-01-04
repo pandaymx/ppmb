@@ -62,6 +62,7 @@ export default hopeTheme({
     comment: {
       provider: "Waline",
       serverURL: "https://comment.ppmb.xyz",
+      
     },
     components:{
       components:[
