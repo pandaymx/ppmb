@@ -13,34 +13,71 @@ isOriginal: true
 ## Mapper CRUD
 
 ### Insert
-只有以实体类方式插入单条记录`int insert(T entity);`。
+
+```java
+// 插入一条记录
+int insert(T entity);
+```
+
+::: code-tabs
+@tab Java
 
 ```java
 @Test
 void insert() {
-    Girl girl = new Girl();
-    girl.setName("高圆圆");
-    girl.setEmail("gaoyuanyuan@qq.com");
-    girl.setAge(17);
-    mapper.insert(girl);
+    User user = new User();
+    user.setName("蔡徐坤");
+    user.setAge(18);
+    mapper.insert(user);
 }
 ```
+
+@tab SQL
+
+```sql
+INSERT INTO user (id, name, age)
+VALUES ([自动生成], 蔡徐坤, 18)
+```
+:::
+
 
 ### Delete
 
-根据条件来删除记录`int delete(@Param(Constants.WRAPPER) Wrapper<T> wrapper);`。
+```java
+// 根据 entity 条件，删除记录
+int delete(@Param(Constants.WRAPPER) Wrapper<T> wrapper);
+// 删除（根据ID 批量删除）
+int deleteBatchIds(@Param(Constants.COLLECTION) Collection<? extends Serializable> idList);
+// 根据 ID 删除
+int deleteById(Serializable id);
+// 根据 columnMap 条件，删除记录
+int deleteByMap(@Param(Constants.COLUMN_MAP) Map<String, Object> columnMap);
+```
+
+::: code-tabs
+@tab Java
 
 ```java
 @Test
-void delete1() {
-    mapper.delete(new UpdateWrapper<Girl>().
-            eq("id", "1716825095451095041"));
+void delete() {
+    mapper.delete(new UpdateWrapper<User>()
+          .eq("id", "1743862075090014210"));
 }
 ```
 
-根据id列表进行删除`int deleteBatchIds(@Param(Constants.COLLECTION) Collection<? extends Serializable> idList);`
+@tab SQL
+
+```sql
+DELETE FROM user 
+WHERE (id = "1743862075090014210")
+```
+:::
+
+::: code-tabs
+@tab Java
 
 ```java
+@Test
 void delete2() {
     ArrayList list = new ArrayList();
     list.add(1);
@@ -51,82 +88,69 @@ void delete2() {
 }
 ```
 
-根据id进行删除`int deleteById(Serializable id);`，官网中只有这一个，但是实测还有一个通过实体类的。
+@tab SQL
+
+```sql
+DELETE FROM user 
+WHERE id 
+IN ( 1 , 2 , 3 , 4 )
+```
+
+:::
+
+
+
+::: code-tabs
+@tab Java
 
 ```java
 @Test
 void delete3() {
     mapper.deleteById(5);
     User user = new User();
-    user.setId(1716830415875411969L);
-    mapper.deleteById(user);
 }
 ```
 
-根据表字段表字段对象条件来删除`int deleteByMap(@Param(Constants.COLUMN_MAP) Map<String, Object> columnMap);`
+@tab SQL
+
+```sql
+DELETE FROM user 
+WHERE id=5
+```
+
+:::
+
+
+::: code-tabs
+@tab Java
 
 ```java
 @Test
 void delete4() {
     HashMap<String,Object> map = new HashMap<>();
-    map.put("id","5");
+    map.put("id","1743869706965733377");
     mapper.deleteByMap(map);
 }
 ```
 
-意思就是where语句后id = 5。
+@tab SQL
 
-
-#### 防全表更新删除插件
-
-添加防全表更新和删除插件。之后使用delete和update就需要添加条件构造器。
-
-```java
-@Configuration
-public class MybatisPlusConfig {
-  @Bean
-  public MybatisPlusInterceptor mybatisPlusInterceptor() {
-    MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
-    interceptor.addInnerInterceptor(new BlockAttackInnerInterceptor());
-    return interceptor;
-  }
-}
+```sql
+DELETE FROM user 
+WHERE id = 1743869706965733377
 ```
 
+:::
 
-
-#### 逻辑删除
-
-```yaml
-mybatis-plus:
-  global-config:
-    db-config:
-      logic-delete-field: flag # 全局逻辑删除的实体字段名(since 3.3.0,配置后可以忽略不配置步骤2)
-      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
-      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
-```
-
-```java
-@Data
-@TableName("user")
-public class User {
-    @TableId
-    private Long id;
-    private String name;
-    private Integer age;
-    @TableLogic
-    private Integer deleted;
-    private Integer version;
-}
-```
 
 ### Update
 
-根据whereWrapper`int update(@Param(Constants.ENTITY) T updateEntity, @Param(Constants.WRAPPER) Wrapper<T> whereWrapper);`。
-
-一种是根据实体类和条件构造器，条件构造器中相当于where条件。
-
-一种是根据条件构造器，其中通过set为其注入相关的set值。
+```java
+// 根据 whereWrapper 条件，更新记录
+int update(@Param(Constants.ENTITY) T updateEntity, @Param(Constants.WRAPPER) Wrapper<T> whereWrapper);
+// 根据 ID 修改
+int updateById(@Param(Constants.ENTITY) T entity);
+```
 
 ```java
 @Test

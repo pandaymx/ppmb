@@ -12,7 +12,8 @@ isOriginal: true
 
 ## 简介
 
-Linux是一种类UNIX操作系统，英文解释为Linux is not Unix。
+Linux 是一种类 UNIX 操作系统，英文解释为Linux is not Unix。
+
 ### Linux的组成
 
 1. Linux系统内核：提供最核心的功能。
