@@ -12,6 +12,14 @@ export default navbar([
       'datastr/'
     ]
   },
+  {
+    text: 'java',
+    icon: "ppmb icon-java",
+    prefix: "/java/",
+    children: [
+      'java/',
+    ]
+  },
   "/ai/",
   "/math/"
 ]);
