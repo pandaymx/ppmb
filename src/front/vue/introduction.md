@@ -23,7 +23,7 @@ Vue 是一个构建用户界面的渐进式框架。提升了开发效率。
 
 ### 单文件组件
 
-通过构建工具创建的 vue 项目，使用类似于 HTML 的语法来写 vue 组件。组件扩展名以 `.vue` 结尾。
+通过构建工具创建的 Vue 项目，使用类似于 HTML 的语法来写 vue 组件。组件扩展名以 `.vue` 结尾。
 
 ```vue
 <script setup>
@@ -54,7 +54,7 @@ button {
 
 很多网站都有线上编写代码的方式，具体可自己百度进行查看。
 
-[vue 官网](https://play.vuejs.org/#eNo9jcEKwjAMhl/lt5fpQYfXUQfefAMvvRQbddC1pUuHUPrudg4HIcmXjyRZXEM4zYlEJ+T0iEPgXjn6BB8Zhp46WUZWDjCa9f6w9kAkTtH9CRinV4fmRtZ63H20Ztesqiylphqy3R5UYBqD1UyVAPk+9zkvV1CKbCv9poMLiTEfR2/IXpSoXomqZLtti/IFwVtA9A==)、[JSFiddle](https://jsfiddle.net/yyx990803/2ke1ab0z/)
+[Vue 官网](https://play.vuejs.org/#eNo9jcEKwjAMhl/lt5fpQYfXUQfefAMvvRQbddC1pUuHUPrudg4HIcmXjyRZXEM4zYlEJ+T0iEPgXjn6BB8Zhp46WUZWDjCa9f6w9kAkTtH9CRinV4fmRtZ63H20Ztesqiylphqy3R5UYBqD1UyVAPk+9zkvV1CKbCv9poMLiTEfR2/IXpSoXomqZLtti/IFwVtA9A==)、[JSFiddle](https://jsfiddle.net/yyx990803/2ke1ab0z/)
 
 ### node 项目
 
@@ -88,6 +88,24 @@ pnpm create vite my-vue-app --template vue
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 ```
 
+CDN 这种方式更简单，但是无法使用 vue 组件。CDN 的使用不进行讲解，因为大部分都是前后端开发，不常使用这种开发方式。
 ## 创建应用
+
+### 实例
+ 
+```js
+import { createApp } from 'vue'
+import App from './App.vue'
+
+const app = createApp(App)
+app.mount('#app')
+```
+
+1. 通过 `createApp` 创建 vue 应用实例，可创建多个。
+
+2. `import App from './App.vue'` 从另一个文件导入根组件。
+
+3. `app.mount(#app)` 则是挂载应用。
+
 
 <Share colorful />
