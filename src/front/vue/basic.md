@@ -1,18 +1,54 @@
+---
+title: 开始
+icon: ppmb icon-html5
+category:
+  - vue
+tag:
+  - 基本介绍
+order: 2
+isOriginal: true
+---
 
-## 基本语法
+## 响应式基础
 
-### 创建应用
-
-
-### 响应式基础
+### ref
 
 通过 `ref` 函数声明响应式状态，实例如下：
 
-```vue
+```js
 import { ref } from 'vue'
 
 const count = ref(0)
+console.log(count)
+console.log(count.value)
 ```
+
+`ref` 接收参数，会带回一个带有 `.value` 属性的对象。后面的两个输出结果相同。
+
+
+
+### reactive
+
+`reactive` 另一种声明响应式状态的方式，将内部值进行包装，将事件监听的代码进行改进。
+
+```vue
+<script setup lang="ts">
+import {reactive} from 'vue';
+
+const msg = reactive({count: 0});
+</script>
+
+<template>
+  <button @click="msg.count++">count is: {{ msg.count }} </button>
+</template>
+```
+
+相比较前者无需使用 `value` 来获取内部值。
+
+:::tip reactive 与 ref 的区别
+reactive 不能用于基本数据类型，建议使用 ref。
+:::
+## 模板语法
 
 ### 文本插值
 
@@ -49,7 +85,13 @@ const msg = ref('<h1>Hello World</h1>');
 
 ### 属性绑定
 
-通过 `v-bind:属性名` 进行绑定，使用比较多，因此可以直接改成 `:属性名`。
+通过 `v-bind:属性名` 进行绑定，使用比较多，因此可以直接改成 `:属性名`，使用没有参数的 `v-bind` 来绑定多个值。
+
+
+
+::: code-tabs#shell
+
+@tab 绑定属性值
 
 ```vue
 <script setup lang="ts">
@@ -68,6 +110,37 @@ const msg = ref('test');
 }
 </style>
 ```
+
+@tab 绑定布尔值
+
+```vue
+<script setup>
+import {ref} from 'vue'
+const isButtonDisabled = ref(false)
+</script>
+
+<template>
+<button :disabled="isButtonDisabled">Button</button>
+</template>
+```
+
+@tab:active 动态绑定多个值
+
+```vue
+<script setup>
+const objectOfAttrs = {
+  id: 'container',
+  class: 'wrapper'
+}
+</script>
+
+<template>
+<div v-bind="objectOfAttrs">你好</div>
+</template>
+```
+
+:::
+
 
 ### 绑定表达式
 
@@ -145,3 +218,5 @@ reactive 不能用于基本数据类型，建议使用 ref。
 
 表单通过 `v-bing` 和 `v-on` 来表单的输入创建双向绑定。
 
+
+<Share colorful />

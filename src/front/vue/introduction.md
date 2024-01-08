@@ -5,7 +5,7 @@ category:
   - vue
 tag:
   - 基本介绍
-order: 4
+order: 1
 isOriginal: true
 ---
 
@@ -14,7 +14,7 @@ isOriginal: true
 
 ### Vue 介绍
 
-Vue 是一个构建用户界面的渐进式框架。提升了开发效率。
+Vue 是一个构建用户界面的渐进式框架。提升了开发效率。 `Vue 2` 已经停止更新，建议使用 `Vue 3`。
 
 :::tip 渐进式框架
 缓而图之，可以部分界面使用 Vue 功能，不像 Angular 有强烈的排他性。
@@ -47,6 +47,42 @@ button {
 ### API 风格
 
 选项式 API 和组合式 API。选项式 API 通过 `script setup` 进行标记，从而简化操作，后续不会讲解组合式 API，以选项式 API 为主。
+
+
+::: code-tabs
+
+@tab 选项式
+
+```vue
+<script>
+export default{
+  data(){
+    return{
+      msg: "Hello"
+    }
+  }
+}
+</script>
+
+<template>
+{{ msg }}
+</template>
+```
+
+@tab 组合式
+
+```vue
+<script setup>
+import {ref} from 'vue'
+const msg = ref("Hello")
+</script>
+
+<template>
+{{ msg }}
+</template>
+```
+:::
+
 
 ## 快速入门
 
