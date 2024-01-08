@@ -17,7 +17,7 @@ isOriginal: true
 Vue 是一个构建用户界面的渐进式框架。提升了开发效率。
 
 :::tip 渐进式框架
-
+缓而图之，可以部分界面使用 Vue 功能，不像 Angular 有强烈的排他性。
 :::
 
 
@@ -64,7 +64,7 @@ npm create vue@latest
 
 根据自己的需求选择需要的功能，之后通过以下命令开启服务器。
 
-```
+```md
 > cd <your-project-name>
 > npm install
 > npm run dev
