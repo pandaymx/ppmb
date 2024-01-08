@@ -91,7 +91,6 @@ pnpm create vite my-vue-app --template vue
 CDN 这种方式更简单，但是无法使用 vue 组件。CDN 的使用不进行讲解，因为大部分都是前后端开发，不常使用这种开发方式。
 ## 创建应用
 
-### 实例
  
 ```js
 import { createApp } from 'vue'
