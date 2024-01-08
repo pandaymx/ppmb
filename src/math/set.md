@@ -57,13 +57,13 @@ basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
 
 将集合中的元素一一列举出来，例如：
 
-$$A= \left \{ a,b,c,d \right \} $$
+$$A= \left \{ a,b,c,d \right \}$$
 
 ### 描述法
 
 国内的定义是 {代表元素|满足的性质}，例如：
 
-$$Q =\left \{ x\mid x=\frac{p}{q},p\in N_{+},q\in Z  \right \} $$
+$$Q =\left \{ x\mid x=\frac{p}{q},p\in N_{+},q\in Z  \right \}$$
 
 国外的定义是除了这种方式还可以使用自然语言进行描述.
 
@@ -107,7 +107,7 @@ $$A\subsetneqq B  \quad \text{或} \quad  B \supsetneqq A$$
 
 ### 交集
 
-集合 $A$ 和集合 $B$ 中相同元素组成的新集合，记作 $A\cap B $ 或 $ B\cap A$，读作 A 交 B 或 B 交 A.
+集合 $A$ 和集合 $B$ 中相同元素组成的新集合，记作 $A \cap B$ 或 $B \cap A$，读作 A 交 B 或 B 交 A.
 
 ### 并集
 
@@ -139,13 +139,15 @@ $$C_{u}A=\left \{ x\mid x\in A ,x\notin C  \right \} $$
 
 ### 区间
 
-对于区间而言，是一种更为直观的表示方式，对于 $\left (a, b  \right ) $ 就等价于 $\left \{ x|x>a,x<b \right \} $ ，$\left [ a,b \right ) $ 中括号等价于 $\left \{ x|x \ge  a,x<b \right \} $.
+对于区间而言，是一种更为直观的表示方式，对于 $\left ( a,b \right )$ 就等价于 $\left \{ x \mid x>a,x<b \right \}$ ，$\left [ a,b \right )$ 中括号等价于 $\left \{ x \mid x \ge  a,x<b \right \}$.
+
+
 
 圆括号表示去除，方括号表示包括.
 
-如果表示无界，则需要使用 $\infty $ 来表示，称为无穷.
+如果表示无界，则需要使用 $\infty$ 来表示，称为无穷.
 
-$\left \{ x|x \ge  a \right \} $ 表示 $\left (a, +\infty  \right ) $，如果 $x<a$ 表示为 $\left (-\infty, a  \right )$.
+
 
 :::tip 区间两端可以相同吗
 可以，但是表示的是空集，单元素集合不能表示为区间.
@@ -153,7 +155,26 @@ $\left \{ x|x \ge  a \right \} $ 表示 $\left (a, +\infty  \right ) $，如果 
 
 ### 邻域
 
-邻域是一种更加特殊的区间，
+邻域是一种更加特殊的区间，某一点 $x$ 的邻域 $\delta$，就表示为 $\left \{x \mid a-\delta<x<a+\delta \right \}$，亦可写成 $\left \{x \mid \begin{vmatrix}
+x-a
+\end{vmatrix}< \delta \right \}$
 
+去心领域则是该区间不包括点 $a$， $\left \{x \mid 0<\begin{vmatrix}
+x-a
+\end{vmatrix}< \delta \right \}$
+
+### 集合的比较
+
+集合一般而言很难进行比较，自然数集合和偶数集合哪个更大，按照很多人的第一映像可能是偶数集合更大，但是在集合学中却并非如此.
+
+集合中的元素能做到一一对应吗？对于自然数集合，0 和 0 对应，1 和 2 对应，以此类推，每一个自然数集合都能找到一个偶数集合进行对应，因此集合的大小是一样的.
+
+### 稠密性
+
+部分集合具有稠密性，解释起来很难，可以这样理解，对于整数而言，我们任取两个不相等的整数，两个整数之间无论差距有多大，对于集合元素中的个数都是有限的.
+
+但是对于有理数的集合，我们任取两个数，哪怕两数差距再小，其中的元素是有限个的，因此它是稠密的.
+
+正因如此 $0.\overset{.}{9}$ 和 1 是相等的，因为两数之间并没有其他小数存在.
 
 <Share colorful />

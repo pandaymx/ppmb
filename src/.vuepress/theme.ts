@@ -79,11 +79,9 @@ export default hopeTheme({
       imgLazyload: true,
       imgSize: true,
       include: true,
-      // install katex before enabling it
-      katex: true,
 
       // install mathjax-full before enabling it
-      // mathjax: true,
+      mathjax: true,
 
       mark: true,
 
