@@ -1,5 +1,5 @@
 ---
-title: 开始
+title: 简介
 icon: ppmb icon-html5
 category:
   - vue
@@ -191,32 +191,45 @@ function increment(){
 </template>
 ```
 
-## 进阶
+## 指令
 
-### reactive
+指令是带有 `v-` 前缀的特殊属性，包括 `v-html` 和 `v-bind`。指令可以动态更新 DOM。
 
-另一种声明响应式状态的方式，将内部值进行包装，将事件监听的代码进行改进。
+### 参数
+
+一些指令需要参数值进行绑定，一般使用 `:` 进行标识。
 
 ```vue
 <script setup lang="ts">
-import {reactive} from 'vue';
+import { ref } from 'vue'
 
-const msg = reactive({count: 0});
+const url = ref("https://www.baidu.com")
 </script>
 
 <template>
-  <button @click="msg.count++">count is: {{ msg.count }} </button>
+  <a :href="url">百度一下</a>
 </template>
 ```
 
-相比较前者无需使用 `value` 来获取内部值。
+### 动态参数
 
-:::tip reactive 与 ref 的区别
-reactive 不能用于基本数据类型，建议使用 ref。
-:::
-### 表单绑定
 
-表单通过 `v-bing` 和 `v-on` 来表单的输入创建双向绑定。
+动态参数会通过表达式来进行绑定。
+
+```vue
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const url = ref("https://www.baidu.com")
+const test = ref("href")
+</script>
+
+<template>
+  <a :[test]="url">百度一下</a>
+</template>
+```
+
+动态参数尽量全小写、不要使用空格和引号等。
 
 
 <Share colorful />

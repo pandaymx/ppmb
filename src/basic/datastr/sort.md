@@ -22,18 +22,14 @@ isOriginal: true
 冒泡排序是最基本的一个排序，基本思想是从第一个元素开始，依次比较后续的元素，两元素逆序则交换元素，这样子就可以找到最大或者最小的元素。
 
 ```java
-// 两数进行交换
-public static void swap(int[] arr, int i, int j) {
-    // 设置三个变量，其中 temp 作为临时变量，之后两者进行交换
-    int temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
-}
-public int[] bubbleSort(int[] arr) {
+public static void bubbleSort(int[] arr) {
+    if (arr.length <=1) {
+        return;
+    }
     for (int i = 0; i < arr.length-1; i++) {
         boolean flag = false;
         for (int j = 0; j < arr.length-i-1; j++) {
-            if (arr[j] <= arr[j+1]) {
+            if (arr[j] >=arr[j+1]) {
                 swap(arr, j, j+1);
                 flag = true;
             }
@@ -42,7 +38,11 @@ public int[] bubbleSort(int[] arr) {
             break;
         }
     }
-    return arr;
+}
+public static void swap(int[] arr, int i, int j) {
+    int temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
 }
 ```
 
@@ -51,9 +51,9 @@ public int[] bubbleSort(int[] arr) {
 选择排序是一种简单直观的排序算法。它的工作原理是每一趟排序，都从待排序的数据元素中选出最小（大）的一个元素，存放在序列的起始位置，直到全部待排序的数据元素排完。
 
 ```java
-public int[] quickSort(int[] arr) {
+public static void selectionSort(int[] arr) {
     if (arr.length <= 1) {
-        return arr;
+        return;
     }
     for (int i = 0; i < arr.length; i++) {
         int minIndex = i;
@@ -68,7 +68,6 @@ public int[] quickSort(int[] arr) {
             arr[minIndex] = temp;
         }
     }
-    return arr;
 }
 ```
 
@@ -114,7 +113,33 @@ public static void insertSort(int[] arr) {
 }
 ```
 
-### 二分查找
+### 折半插入查询
+
+相比较前者使用过二分查找来查找插入位置，代码如下图所示：
+```java
+public static void binInsertSort(int[] arr) {
+    for (int i=1;i<arr.length;i++){
+        int temp = arr[i];
+        // 用折半查找法去查找
+        int low = 0;
+        int high = i-1;
+        while (low<=high){
+            int mid = (low+high)/2;
+            if (arr[mid]>temp){
+                high = mid - 1;
+            }else {
+                low = mid + 1;
+            }
+        }
+        // 确定最后的位置为low或者high+1
+        for (int j=i-1;j>=low;j--){
+            arr[j+1] = arr[j];
+        }
+        // 赋值
+        arr[low] = temp;
+    }
+}
+```
 
 ## 希尔排序
 
