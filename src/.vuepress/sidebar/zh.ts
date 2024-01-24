@@ -5,7 +5,9 @@ export const zhSidebar = sidebar({
     "",
     "guide",
     "perfect",
+    "introduction/",
     "basic/",
   ],
-  "/basic/": "structure"
+  "/basic/": "structure",
+  "/introduction/": 'structure',
 });
