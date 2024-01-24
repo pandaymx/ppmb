@@ -3,18 +3,11 @@ import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://pandaymx.github.io",
 
-  author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
-  },
+  iconAssets: ["fontawesome-with-brands","//at.alicdn.com/t/c/font_4282820_7pqugtb738u.css"],
 
-  iconAssets: "fontawesome-with-brands",
-
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
-
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "pandaymx/ppmb",
 
   docsDir: "src",
 
@@ -58,21 +51,25 @@ export default hopeTheme({
     "/en/": {
       // navbar
       navbar: enNavbar,
+      author: {
+        name: "ppmb",
+        url: "https://pandaymx.github.io",
+      },
 
       // sidebar
       sidebar: enSidebar,
 
-      footer: "Default footer",
+      footer: "I only hope your heart like my heart",
 
       displayFooter: true,
 
       blog: {
-        description: "A FrontEnd programmer",
+        description: "A very naughty person",
         intro: "/en/intro.html",
       },
 
       metaLocales: {
-        editLink: "Edit this page on GitHub",
+        editLink: "Edit this page",
       },
     },
 
@@ -80,24 +77,28 @@ export default hopeTheme({
      * Chinese locale config
      */
     "/": {
+      author: {
+        name: "皮皮萌宝",
+        url: "https://pandaymx.github.io",
+      },
       // navbar
       navbar: zhNavbar,
 
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "默认页脚",
+      footer: "只愿君心似我心",
 
       displayFooter: true,
 
       blog: {
-        description: "一个前端开发者",
+        description: "一个很皮的人",
         intro: "/intro.html",
       },
 
       // page meta
       metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
+        editLink: "编辑此页",
       },
     },
   },
