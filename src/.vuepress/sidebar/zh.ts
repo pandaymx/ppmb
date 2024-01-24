@@ -4,6 +4,8 @@ export const zhSidebar = sidebar({
   "/": [
     "",
     "guide",
-    "perfect"
+    "perfect",
+    "basic/",
   ],
+  "/basic/": "structure"
 });
