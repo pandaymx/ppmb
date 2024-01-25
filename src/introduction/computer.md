@@ -26,91 +26,19 @@ isOriginal: true
 
 ### 笔记本
 
-::: echarts 笔记本厂商占比图
-
-```json
-{
-  "legend": {
-    "top": "bottom"
-  },
-  "toolbox": {
-    "show": true,
-    "feature": {
-      "mark": {
-        "show": true
-      },
-      "dataView": {
-        "show": true,
-        "readOnly": false
-      },
-      "restore": {
-        "show": true
-      },
-      "saveAsImage": {
-        "show": true
-      }
-    }
-  },
-  "series": [
-    {
-      "name": "Nightingale Chart",
-      "type": "pie",
-      "radius": [20, 100],
-      "center": ["50%", "50%"],
-      "roseType": "area",
-      "itemStyle": {
-        "borderRadius": 8
-      },
-      "data": [
-        {
-          "value": 180646,
-          "name": "联想"
-        },
-        {
-          "value": 104303,
-          "name": "惠普"
-        },
-        {
-          "value": 87852,
-          "name": "ThinkPad"
-        },
-        {
-          "value": 70053,
-          "name": "华硕"
-        },
-        {
-          "value": 64292,
-          "name": "机械革命"
-        },
-        {
-          "value": 60135,
-          "name": "华为"
-        },
-        {
-          "value": 58493,
-          "name": "戴尔"
-        },
-        {
-          "value": 48850,
-          "name": "苹果"
-        },
-                {
-          "value": 34859,
-          "name": "宏碁"
-        },
-        {
-          "value": 28454,
-          "name": "ThinkBook"
-        }
-      ]
-    }
-  ]
-}
+```pie
+title test
+  "联想" : 180646
+  "惠普" : 104303
+  "ThinkPad" : 87852
+  "华硕" : 70053
+  "机械革命" : 64292
+  "华为" : 60135
+  "戴尔" : 58493
+  "苹果" : 48850
+  "宏碁" : 34859
+  "ThinkBook" : 28454
 ```
-
-:::
-
-@include-pop()
 
 笔记本的话我建议程序员直接买苹果笔记本，其他的话游戏本和轻薄本的话，任意选一个自己觉得好看的就行。不太建议买商务本或者轻薄本。
 
@@ -132,7 +60,7 @@ isOriginal: true
 
 搞设计的不应当以计算机行业论，因为他们一般是单个的软件为主，如果一个单个计算机软件的使用就能算计算机行业，那文员操作 word 和 ppt 也能算计算机行业了？
 
-如果程序语言是 Java 的话内存需要更大一点，因为 Java 非常吃内存，但是一般无论是笔记本还是电脑都是可以正常 +1 根或者多根的，未来根据自己需求加就可以了。
+如果程序语言是 Java 的话内存需要更大一点，因为 Java 非常吃内存，但是一般无论是笔记本还是电脑都是可以正常加一根或者多根的，未来根据自己需求加就可以了。
 
 ### 游戏
 
@@ -142,9 +70,7 @@ isOriginal: true
 
 ## CPU
 
-![cpu天梯图](assets/cpu天梯图.png)
-
-CPU只有两家可以进行选择，因为CPU很难坏，因此无所谓拼多多和京东，建议哪个便宜买哪个。
+CPU 只有两家可以进行选择，因为 CPU 很难坏，因此无所谓拼多多和还是京东购买，建议哪个便宜买哪个，CPU 的注意事项比较少，因此不再过多赘述。
 
 ::: danger 硅脂
 
