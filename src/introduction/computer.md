@@ -27,7 +27,7 @@ isOriginal: true
 ### 笔记本
 
 ```pie
-title test
+title 笔记本厂商占比
   "联想" : 180646
   "惠普" : 104303
   "ThinkPad" : 87852
