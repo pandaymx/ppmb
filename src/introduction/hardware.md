@@ -1,7 +1,7 @@
 ---
 title: 硬件选择
 order: 2
-icon: ppmb icon-computer
+icon: ppmb icon-yingjian
 category:
   - 基础
 tag:

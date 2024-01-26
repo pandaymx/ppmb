@@ -5,7 +5,7 @@ import { enSidebar, zhSidebar } from "./sidebar/index.js";
 export default hopeTheme({
   hostname: "https://pandaymx.github.io",
 
-  iconAssets: ["fontawesome-with-brands","//at.alicdn.com/t/c/font_4282820_7pqugtb738u.css"],
+  iconAssets: ["fontawesome-with-brands","//at.alicdn.com/t/c/font_4282820_ibzic5azzym.css"],
 
   repo: "pandaymx/ppmb",
 
