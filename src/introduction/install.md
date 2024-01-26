@@ -20,20 +20,20 @@ star: true
 ### 浏览器
 
 1. [Google Chrome](https://www.google.cn/intl/zh-CN/chrome/)
-2. Edge浏览器
+2. Edge 浏览器
 3. [火狐浏览器](http://www.firefox.com.cn/download/#product-desktop-release)
 4. qq浏览器、360极速浏览器二选一
 
 
 :::tip 
 
-三者当中最推荐谷歌浏览器，但是edge浏览器如今的发展也是蒸蒸日上。
+三者当中最推荐谷歌浏览器，但是 edge 浏览器如今的发展也是蒸蒸日上。
 
 :::
 
 ::: danger 为什么后面有坨屎
 
-国内很多厂商还是有flash支持，而其他三个早早放弃了flash。尤其还有一坨大屎，尤其是国内的特供版flash，更是一坨巨屎。
+国内很多厂商还是有 flash 支持，而其他三个早早放弃了 flash。尤其还有一坨大屎，尤其是国内的特供版 flash，更是一坨巨屎。
 :::
 
 
@@ -77,7 +77,7 @@ office 需要自主激活，WPS 更适合中国宝宝，Typora 可以使用 mark
 - [QQ影音](https://pc.qq.com/detail/8/detail_8.html)
 
 ::: tip
-qq影音虽然官网凉了，但是软件中心还有。
+qq 影音虽然官网凉了，但是软件中心还有。
 :::
 
 ###  安全软件
