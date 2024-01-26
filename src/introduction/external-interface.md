@@ -1,6 +1,6 @@
 ---
-title: 接口
-order: 3
+title: 外部接口
+order: 4
 icon: ppmb icon-jiekou
 category:
   - 基础
@@ -12,7 +12,7 @@ isOriginal: true
 
 ## USB 接口
 
-![USB接口](assets/USB接口.png)
+
 
 ### type
 
@@ -45,8 +45,13 @@ USB 可以分为 2.0，3.0和未来的4.0。
 
 音频接口一般是以颜色进行标识，一般为3个或者6个。
 
+一般上绿色是输出设备、红色是麦克风。
+
+
 ## 显示器接口
 
 显示器接口如今以 DP 口和 HDMI 口为主，建议使用 DP 口，要快于 HDMI 口。
+
+但是具体还是要参考一下速率，同代的话 DP 一般是大于 HDMI，不同代的话就无法保证。
 
 <Share colorful />

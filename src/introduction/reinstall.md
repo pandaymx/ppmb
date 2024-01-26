@@ -1,7 +1,7 @@
 ---
 title: 重装系统
 icon: ppmb icon-xitong
-order: 5
+order: 6
 category: 
   - 入门
 tag:
