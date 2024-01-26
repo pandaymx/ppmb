@@ -1,6 +1,6 @@
 ---
 title: 硬件选择和组装
-order: 1
+order: 2
 icon: ppmb icon-computer
 category:
   - 基础

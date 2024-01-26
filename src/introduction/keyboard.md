@@ -1,6 +1,6 @@
 ---
 title: 键盘的使用
-order: 3
+order: 4
 icon: ppmb icon-jianpan
 category:
   - 入门
