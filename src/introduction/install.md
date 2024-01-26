@@ -10,9 +10,12 @@ tag:
 isOriginal: true
 star: true
 ---
-## 通用软件
 
-<XiGua id="7287209173061009980"  autoplay/>
+## 基本介绍
+
+国内的软件要特别小心给你进行捆绑安装，一般上不要放在 C 盘。
+
+## 通用软件
 
 ### 浏览器
 
@@ -38,13 +41,12 @@ star: true
 
 
 1. [Office套装](https://otp.landian.vip/zh-cn/)
-    <XiGua id="7291509030009176628" />
 2. [WPS软件](https://typoraio.cn/)
 3. [Typora软件](https://typoraio.cn/)
 
 ::: tip
 
-office需要自主激活，WPS更适合中国宝宝，Typora可以使用markdown语法。
+office 需要自主激活，WPS 更适合中国宝宝，Typora 可以使用 markdown 语法。
 
 :::
 
@@ -61,12 +63,11 @@ office需要自主激活，WPS更适合中国宝宝，Typora可以使用markdown
 ### 压缩软件
 
 - [7-zip](https://7-zip.org/)
-- [Bandizip](https://www.bandisoft.com/bandizip/)
 - [winRAR](https://www.win-rar.com/start.html?&L=0)
 
 ::: tip
 
-只有winRAR才能压缩成rar压缩包，并不是推荐它，只是没办法替换它。如果不是必须使用rar压缩，下载其余两个即可。
+只有 winRAR 才能压缩成 rar 压缩包，并不是推荐它，只是没办法替换它。如果不是必须使用 rar 压缩，下载其余两个即可。
 
 :::
 
@@ -76,7 +77,6 @@ office需要自主激活，WPS更适合中国宝宝，Typora可以使用markdown
 - [QQ影音](https://pc.qq.com/detail/8/detail_8.html)
 
 ::: tip
-
 qq影音虽然官网凉了，但是软件中心还有。
 :::
 
