@@ -1,6 +1,6 @@
 import { defineUserConfig } from "vuepress";
+import { viteBundler } from '@vuepress/bundler-vite'
 import theme from "./theme.js";
-
 export default defineUserConfig({
   base: "/ppmb/",
 
@@ -15,9 +15,8 @@ export default defineUserConfig({
       title: "Blog Demo",
       description: "A blog demo for vuepress-theme-hope",
     },
-
   },
-
+  bundler: viteBundler({}),
   theme,
 
   // Enable it with pwa
