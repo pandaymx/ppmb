@@ -8,9 +8,8 @@ category:
   - 入门
 tag:
   - 目录
-prev: ../guide
+prev: ../perfect.md
 next: computer
 ---
 
-该页主要是将计算机完全入门，没有将一些操作，未来会加的。
 <AutoCatalog/>
