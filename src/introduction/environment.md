@@ -1,6 +1,6 @@
 ---
 title: 环境变量
-icon: ppmb icon-ruanjian
+icon: ppmb icon-huanjingbianliang
 order: 9
 category:
   - 入门
