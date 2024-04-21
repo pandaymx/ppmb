@@ -4,4 +4,5 @@ export const zhSidebar = sidebar({
   "/": [
     "",
   ],
+  "/ai/": "structure"
 });
