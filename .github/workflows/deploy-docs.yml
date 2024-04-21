@@ -50,3 +50,5 @@ jobs:
           # 部署文档
           branch: gh-pages
           folder: src/.vuepress/dist
+          repository-name: pandaymx/pandaymx.github.io
+          token: ${{ secrets.BLOG_SECRET }}

@@ -3,16 +3,16 @@ import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://pandaymx.github.io",
 
   author: {
     name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    url: "https://pandaymx.github.io",
   },
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/favicon.ico",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 
@@ -86,12 +86,14 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "默认页脚",
+      footer: "皮皮萌宝的博客",
 
       displayFooter: true,
-
+      author:{
+        name: "皮皮萌宝",
+      },
       blog: {
-        description: "一个前端开发者",
+        description: "一个爱笑的人",
         intro: "/intro.html",
       },
 
@@ -247,4 +249,4 @@ export default hopeTheme({
     //   },
     // },
   },
-});
+},{custom: true});
