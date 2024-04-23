@@ -35,7 +35,6 @@ export default hopeTheme({
       Gitlab: "https://example.com",
       Gmail: "mailto:info@example.com",
       Instagram: "https://example.com",
-      Lark: "https://example.com",
       Lines: "https://example.com",
       Linkedin: "https://example.com",
       Pinterest: "https://example.com",
@@ -109,7 +108,12 @@ export default hopeTheme({
 
   plugins: {
     blog: true,
-
+    feed:{
+      rss: true,
+      channel: {
+        ttl: 600,
+      }
+    },
     // Install @waline/client before enabling it
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
